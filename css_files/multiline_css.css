@@ -1,0 +1,12 @@
+/* reset a few things */
+body {
+margin: 0;
+/* some comments within css
+ * hope this works */
+padding: 0;
+}
+
+/* for the main content div */
+#content {
+margin: 10px
+}
