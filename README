@@ -1,0 +1,26 @@
+Test 1:
+1. The implementation is in zd_api_client.rb. The corresponding tests to run and test it are in zd_api_client_test.rb
+
+Test 2:
+1. The implementation is in css_compressor.rb and the tests are in css_compressor_test.rb. All the css files are in a 
+separate folder css_files.
+
+The folder has 3 files to be compressed: 
+- multiline.css: This file has lots of blank lines both outside css block and within css block
+- multiline_css.css: This file has multiline comments both outside css block and within css block
+- simple.css: This is the file given as an example in the problem description
+
+The respective compressed files are multiline_compressed.css, multiline_css_compressed.css, simple_compressed.css.
+compressed.css is the expected output file as per problem description and the tests compare against it.
+
+Assumption: I did not remove spaces between the css selector and the open brace or close brace
+
+Test 3:
+1. The implementation is in grade.rb and the tests are in grade_test.rb. The tests satisfy the following conditions:
+
+a_plus = Grade.new("A+")
+a = Grade.new("A")
+a_plus > a => true
+[a_plus, a].sort => [a, a_plus]
+
+All the code has been tested on ruby 1.9.2 and test-unit 1.2.3 and requires 'rest-client' gem.
