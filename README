@@ -21,6 +21,6 @@ Test 3:
 a_plus = Grade.new("A+")
 a = Grade.new("A")
 a_plus > a => true
-[a_plus, a].sort => [a, a_plus]
+[a_plus, a].sort => A, A+
 
 All the code has been tested on ruby 1.9.2 and test-unit 1.2.3 and requires 'rest-client' gem.
